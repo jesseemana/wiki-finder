@@ -6,7 +6,7 @@ import { useDebounce } from './hooks/useDebounce';
 function App() {
   const [ searchValue, setSearchValue ] = useState( '' );
 
-  const debouncedSearchValue = useDebounce( searchValue, 2000 );
+  const debouncedSearchValue = useDebounce( searchValue, 500 );
 
   return (
     <div className="App">
